@@ -1,0 +1,53 @@
+header
+    position: fixed
+    width: 100%
+    top: 0
+    z-index: 2
+    background-color: #FCF8F7
+    .container
+        .header-main
+            display: flex
+            justify-content: space-between
+            padding: 20px
+            .header__logo
+            .header__nav
+                display: flex
+                align-items: center
+                ul
+                    display: flex
+                    li
+                        list-style-type: none
+                        margin: 0 0 0 60px
+                        display: block
+                        a
+                            display: block
+                            text-decoration: none
+                            font-size: 20px
+                            color: #494949
+                            transition: all .2s ease-in-out
+                            &:hover
+                                color: #000
+                                transform: scale(1.1)
+                                
+                        // a:last-child
+                        //     content: ""
+                        //     display: block
+                        //     background-image: url("../images/menu.png")
+
+                button
+                    cursor: pointer
+                    height: 62px
+                    width: 152px
+                    margin: 0 0 0 130px
+                    font-family: Nunito Sans
+                    font-size: 18px
+                    font-weight: 800
+                    color: #fff
+                    background: #4DC19A
+                    border: none
+                    border-radius: 40px
+                    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05)
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+                    transition: all .3s ease-in-out
+                    &:hover
+                        background: #24a077
