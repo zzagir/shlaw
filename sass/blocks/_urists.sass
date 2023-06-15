@@ -1,6 +1,5 @@
 #two
 	margin: 100px 0 0 0
-	height: 750px
 	.container
 		.section-main
 			display: grid
@@ -47,11 +46,10 @@
 					filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 					transition: all .3s ease-in-out
 					&:hover
-						background: #514b9b
+						background: #534d99
 
 #three
 	margin: 250px 0 0 0
-	height: 750px
 	.container
 		.section-main
 			display: grid
@@ -99,3 +97,109 @@
 					transition: all .3s ease-in-out
 					&:hover
 						background: #514b9b
+
+// TWO
+
+@media (max-width: 1366px)
+	#two
+		padding: 0 30px 0 10px !important
+		.section__image
+			img
+				max-width: 400px
+
+@media (max-width: 1055px)
+	#two
+		margin: 150px 0 0 0 !important
+		background-color: #fff
+		padding: 30px !important
+		.section-main
+			display: flex !important
+			flex-direction: column-reverse !important
+			.section__text
+				margin: 0 0 50px 0 !important
+				text-align: center !important
+				h2, p
+					max-width: 100% !important
+					&::before
+						content: none !important
+				button
+					margin: 40px 0 0 0 !important
+					width: 325px !important
+			.section__image
+				margin: 60px 0 0 0
+				text-align: center !important
+
+@media (max-width: 700px)
+	#two
+		padding: 10px !important
+		.section-main
+			.section__text
+				text-align: left !important
+			.section__image
+				margin: 40px 0 80px 0
+				img
+					max-width: 350px
+
+@media (max-width: 506px)
+	#two
+		.section-main
+			padding: 10px !important
+			.section__text
+				h2
+					font-size: 48px !important
+
+// TWO
+
+// THREE
+
+@media (max-width: 1366px)
+	#three
+		padding: 0 10px 0 40px !important
+		.section__image
+			img
+				margin: 15px
+				max-width: 400px
+
+@media (max-width: 1055px)
+	#three
+		margin: 150px 0 0 0 !important
+		background-color: #fff
+		padding: 30px !important
+		.section-main
+			display: flex !important
+			flex-direction: column !important
+			.section__text
+				margin: 0 0 50px 0 !important
+				text-align: center !important
+				h2, p
+					max-width: 100% !important
+					&::before
+						content: none !important
+				button
+					margin: 40px 0 0 0 !important
+					width: 325px !important
+			.section__image
+				margin: 60px 0 0 0
+				text-align: center !important
+
+@media (max-width: 700px)
+	#three
+		padding: 10px !important
+		.section-main
+			.section__text
+				text-align: left !important
+			.section__image
+				margin: 40px 0 80px 0
+				img
+					max-width: 350px
+					margin: 0
+
+@media (max-width: 506px)
+	#three
+		.section-main
+			padding: 10px !important
+			.section__text
+				h2
+					font-size: 48px !important
+
+// THREE

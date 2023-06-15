@@ -7,7 +7,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="icon" href="./images/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
 	<script src="js/main.js"></script>
 	<title>Shlaw</title>
 </head>
@@ -32,7 +37,7 @@
 								<a class="submenu-btn">Язык
 									<img src="./images/ui/menu.png" alt="">
 								</a>
-								<ul class="submenu">
+								<ul class="submenu" id="submenu">
 									<li><a href="/">Русский</a></li>
 									<li><a href="/">Английский</a></li>
 									<li><a href="/">Турецкий</a></li>
@@ -43,7 +48,12 @@
 						<button>Заявка</button>
 					</div>
 					<div class="header__menu">
-						
+						<img src="./images/ui/menu-mobile.png" alt="menu mobile" class="hdr-btn">
+						<ul class="hdrmenu">
+							<li><a href="/">Главная</a></li>
+							<li><a href="/">Новости</a></li>
+							<li><a href="/">Язык</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -52,12 +62,12 @@
 		<section id='one'>
 			<div class="container">
 				<div class="section-main">
-					<div class="section__text">
+					<div class="section__text wow animate__fadeInLeft" data-wow-duration=".8s">
 						<h2>Юристы SHOYUFSKY CO</h2>
-						<p>КОМАНДА ЮРИДИЧЕСКОЙ КОМПАНИИ «SHOYUFSKY CO» ГОТОВЫ ЗАЩИЩАТЬ ВАШИ ПРАВА НА МЕЖДУНАРОДНОМ УРОВНЕ !</p>
+						<p>КОМАНДА ЮРИДИЧЕСКОЙ КОМПАНИИ «SHOYUFSKY CO» ГОТОВЫ ЗАЩИЩАТЬ ВАШИ ПРАВА НА МЕЖДУНАРОДНОМ УРОВНЕ!</p>
 						<button>Оставить заявки</button>
 					</div>
-					<div class="section__image">
+					<div class="section__image wow animate__fadeInRight" data-wow-duration=".8s">
 						<img src="./images/assets/1.png" alt="">
 					</div>
 				</div>
@@ -67,10 +77,10 @@
 		<section id='two'>
 			<div class="container">
 				<div class="section-main">
-					<div class="section__image">
+					<div class="section__image wow animate__fadeInLeft" data-wow-duration=".8s">
 						<img src="./images/assets/2.png" alt="">
 					</div>
-					<div class="section__text">
+					<div class="section__text wow animate__fadeInRight" data-wow-duration=".8s">
 						<h2>ШОЮФСКИЙ ИЛЬГАМ</h2>
 						<p>Имеет более десяти лет адвокатской практики, на его счету сотни выигранных дел в пользу его доверителей.
 							Также глава компании имеет большой опыт работы в странах СНГ и Европейского Союза. Его клиентами были
@@ -89,7 +99,7 @@
 		<section id='three'>
 			<div class="container">
 				<div class="section-main">
-					<div class="section__text">
+					<div class="section__text wow animate__fadeInLeft" data-wow-duration=".8s">
 						<h2>ШОЮФСКИЙ РУСЛАН</h2>
 						<p>Является молодым и успешным адвокатом, имеющий зарубежный опыт в США. Он является выпускником
 							юридического факультета Московского государственного университета имени М.В. Ломоносова. Шоюфский Руслан
@@ -100,7 +110,7 @@
 						</p>
 						<button>Контакт</button>
 					</div>
-					<div class="section__image">
+					<div class="section__image wow animate__fadeInRight" data-wow-duration=".8s">
 						<img src="./images/assets/3.png" alt="">
 					</div>
 				</div>
@@ -110,13 +120,13 @@
 		<section id='four'>
 			<div class="container">
 				<div class="section-main">
-					<div class="section__text">
+					<div class="section__text wow animate__fadeInDown" data-wow-duration=".8s">
 						<img src="./images/ui/services.png" alt="">
 						<h2>НАШИ УСЛУГИ</h2>
 						<p>перед вами перечень услуг предоставляемых нашей командой. </p>
 						<button>Весь перечень</button>
 					</div>
-					<div class="section__services">
+					<div class="section__services wow animate__fadeInUp" data-wow-duration="1s">
 						<div class="service">
 							<div class="service__info">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
@@ -132,7 +142,43 @@
 								Lorem ipsum dolor sit amet,
 							</div>
 							<div class="service__title">
-								ТРУДОВОЕ И СЕМЕЙНОЕ ПРАВО
+								УГОЛОВНОЕ ПРАВО
+							</div>
+						</div>
+						<div class="service">
+							<div class="service__info">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+								Lorem ipsum dolor sit amet,
+							</div>
+							<div class="service__title">
+								ГОС ЗАКУПКИ
+							</div>
+						</div>
+						<div class="service">
+							<div class="service__info">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+								Lorem ipsum dolor sit amet,
+							</div>
+							<div class="service__title">
+								ТАМОЖНЯ
+							</div>
+						</div>
+						<div class="service">
+							<div class="service__info">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+								Lorem ipsum dolor sit amet,
+							</div>
+							<div class="service__title">
+								ТРАНСПОРТНОЕ И МОРСКОЕ ПРАВО
+							</div>
+						</div>
+						<div class="service">
+							<div class="service__info">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+								Lorem ipsum dolor sit amet,
+							</div>
+							<div class="service__title">
+								ПРЕДПРИНИМАТЕЛИ
 							</div>
 						</div>
 					</div>
@@ -142,7 +188,7 @@
 
 		<section id='five'>
 			<div class="container">
-				<div class="section-main">
+				<div class="section-main wow animate__bounceIn" data-wow-duration="1s">
 					<div class="section__text">
 						<h2>Для консультации напишите в Телеграмм</h2>
 					</div>
