@@ -28,7 +28,16 @@ ul {
   list-style: none;
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: Nunito Sans;
   background: #fff;
   color: #fff;
@@ -89,7 +98,8 @@ header .container .header-main .header__menu ul li {
 header .container .header-main .header__menu ul li a {
   text-decoration: none;
   color: black;
-  font-size: 21px;
+  font-size: 19px;
+  padding: 0 10px;
 }
 header .container .header-main .header__menu ul li:last-child {
   margin: 0;
@@ -128,6 +138,15 @@ header .container .header-main .header__nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+header .container .header-main .header__nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #494949;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 header .container .header-main .header__nav ul li:last-child {
   display: block;
@@ -168,21 +187,6 @@ header .container .header-main .header__nav ul li:last-child ul li a:hover {
           transform: none;
   color: #4DC19A;
 }
-header .container .header-main .header__nav ul li a {
-  display: block;
-  text-decoration: none;
-  font-size: 20px;
-  color: #494949;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-header .container .header-main .header__nav ul li a:hover {
-  color: #4DC19A;
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-}
 header .container .header-main .header__nav button {
   cursor: pointer;
   height: 62px;
@@ -213,9 +217,6 @@ header .container .header-main .header__nav button:hover {
   transition: all 0.15s linear;
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
 }
 
 .hdrmenu {
@@ -224,18 +225,18 @@ header .container .header-main .header__nav button:hover {
   transition: all 0.15s linear;
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
+}
+.hdrmenu li a:hover {
+  color: #4DC19A;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .show {
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
-  -webkit-transform: translateY(0%) !important;
-      -ms-transform: translateY(0%) !important;
-          transform: translateY(0%) !important;
 }
 
 @media (max-width: 950px) {

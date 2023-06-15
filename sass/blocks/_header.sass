@@ -32,7 +32,8 @@ header
                         a
                             text-decoration: none
                             color: black
-                            font-size: 21px
+                            font-size: 19px
+                            padding: 0 10px
                         &:last-child
                             margin: 0
                             a
@@ -52,6 +53,12 @@ header
                         margin: 0 0 0 60px
                         display: flex
                         align-items: center
+                        a
+                            display: block
+                            text-decoration: none
+                            font-size: 20px
+                            color: #494949
+                            transition: all .3s ease-in-out
                         &:last-child
                             display: block
                             cursor: pointer
@@ -80,16 +87,6 @@ header
                                             transform: none
                                             color: #4DC19A
 
-                        a
-                            display: block
-                            text-decoration: none
-                            font-size: 20px
-                            color: #494949
-                            transition: all .3s ease-in-out
-                            &:hover
-                                color: #4DC19A
-                                transform: scale(1.1)
-
                 button
                     cursor: pointer
                     height: 62px
@@ -114,17 +111,20 @@ header
     transition: all .15s linear
     visibility: hidden
     opacity: 0
-    transform: translateY(-100%)
 .hdrmenu
     transition: all .15s linear
     visibility: hidden
     opacity: 0
-    transform: translateY(-100%)
+    li
+        a
+            &:hover
+                color: #4DC19A
+                transform: scale(1.1)
 .show
     display: block !important
     visibility: visible !important
     opacity: 1 !important
-    transform: translateY(0%) !important
+    // transform: translateY(0%) !important
 
 //  SUBMENU
 
