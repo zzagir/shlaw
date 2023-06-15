@@ -9,7 +9,6 @@ header
             display: flex
             justify-content: space-between
             padding: 20px
-            .header__logo
             .header__nav
                 display: flex
                 align-items: center
@@ -18,21 +17,45 @@ header
                     li
                         list-style-type: none
                         margin: 0 0 0 60px
-                        display: block
+                        display: flex
+                        align-items: center
+                        &:last-child
+                            display: block
+                            cursor: pointer
+                            position: relative
+                            ul
+                                flex-direction: column
+                                position: absolute
+                                background-color: #fff
+                                padding: 20px 30px
+                                border-radius: 15px
+                                cursor: auto
+                                top: 44px
+                                left: -68px
+                                box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+
+                                li
+                                    display: block
+                                    margin: 0 0 22px 0
+
+                                    &:last-child
+                                        margin: 0
+                                    a
+                                        display: block
+                                        transition: all .3s ease-in-out
+                                        &:hover
+                                            transform: none
+                                            color: #4DC19A
+
                         a
                             display: block
                             text-decoration: none
                             font-size: 20px
                             color: #494949
-                            transition: all .2s ease-in-out
+                            transition: all .3s ease-in-out
                             &:hover
-                                color: #000
+                                color: #4DC19A
                                 transform: scale(1.1)
-                                
-                        // a:last-child
-                        //     content: ""
-                        //     display: block
-                        //     background-image: url("../images/menu.png")
 
                 button
                     cursor: pointer
@@ -51,3 +74,25 @@ header
                     transition: all .3s ease-in-out
                     &:hover
                         background: #24a077
+
+.submenu
+    transition: all .15s linear
+    visibility: hidden
+    opacity: 0
+    transform: translateY(-100%)
+.show
+    display: block !important
+    visibility: visible !important
+    opacity: 1 !important
+    transform: translateY(0%) !important
+
+@media (max-width: 950px)
+    .header__nav
+        button
+            display: none
+
+@media (max-width: 650px)
+    .header__nav
+        display: none !important
+    .header__menu
+        display: block !important

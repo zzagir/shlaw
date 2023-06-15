@@ -4,9 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="icon" href="./images/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="./css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 	<title>Shlaw</title>
 </head>
 
@@ -27,10 +29,21 @@
 								<a href='/'>Новости</a>
 							</li>
 							<li>
-								<a href='/'>Язык</a>
+								<a class="submenu-btn">Язык
+									<img src="./images/ui/menu.png" alt="">
+								</a>
+								<ul class="submenu">
+									<li><a href="/">Русский</a></li>
+									<li><a href="/">Английский</a></li>
+									<li><a href="/">Турецкий</a></li>
+									<li><a href="/">Азербайджанский</a></li>
+								</ul>
 							</li>
 						</ul>
 						<button>Заявка</button>
+					</div>
+					<div class="header__menu">
+						
 					</div>
 				</div>
 			</div>
@@ -199,7 +212,7 @@
 			</div>
 		</footer>
 	</div>
-
+	
 </body>
 
 </html>

@@ -10,6 +10,9 @@
 *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  --tw-shadow: 0px 0.8px 2px rgba(0,0,0,.032),0px 2.7px 6.7px rgba(0,0,0,.048),0px 12px 30px rgba(0,0,0,.08);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -69,19 +72,63 @@ header .container .header-main .header__nav ul {
 header .container .header-main .header__nav ul li {
   list-style-type: none;
   margin: 0 0 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .container .header-main .header__nav ul li:last-child {
   display: block;
+  cursor: pointer;
+  position: relative;
+}
+header .container .header-main .header__nav ul li:last-child ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 15px;
+  cursor: auto;
+  top: 44px;
+  left: -68px;
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+}
+header .container .header-main .header__nav ul li:last-child ul li {
+  display: block;
+  margin: 0 0 22px 0;
+}
+header .container .header-main .header__nav ul li:last-child ul li:last-child {
+  margin: 0;
+}
+header .container .header-main .header__nav ul li:last-child ul li a {
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header .container .header-main .header__nav ul li:last-child ul li a:hover {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  color: #4DC19A;
 }
 header .container .header-main .header__nav ul li a {
   display: block;
   text-decoration: none;
   font-size: 20px;
   color: #494949;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 header .container .header-main .header__nav ul li a:hover {
-  color: #000;
+  color: #4DC19A;
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -110,6 +157,39 @@ header .container .header-main .header__nav button:hover {
   background: #24a077;
 }
 
+.submenu {
+  -webkit-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.show {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  -webkit-transform: translateY(0%) !important;
+      -ms-transform: translateY(0%) !important;
+          transform: translateY(0%) !important;
+}
+
+@media (max-width: 950px) {
+  .header__nav button {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .header__nav {
+    display: none !important;
+  }
+  .header__menu {
+    display: block !important;
+  }
+}
 #one {
   margin: 100px 0 0 0;
   background-color: #FCF8F7;
@@ -154,7 +234,14 @@ header .container .header-main .header__nav button:hover {
           box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
+#one .container .section-main .section__text button:hover {
+  background: #24a077;
+}
+
 #two {
   margin: 100px 0 0 0;
   height: 750px;
@@ -209,7 +296,14 @@ header .container .header-main .header__nav button:hover {
           box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
+#two .container .section-main .section__text button:hover {
+  background: #514b9b;
+}
+
 #three {
   margin: 250px 0 0 0;
   height: 750px;
@@ -264,7 +358,14 @@ header .container .header-main .header__nav button:hover {
           box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
+#three .container .section-main .section__text button:hover {
+  background: #514b9b;
+}
+
 #four {
   margin: 250px 0 0 0;
   height: 750px;
