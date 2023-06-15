@@ -52,7 +52,7 @@
 				.form-inner input
 					display: block
 					font-family: Nunito Sans
-					font-size: 20px
+					font-size: 19px
 					width: 100%
 					padding: 5px 15px
 					margin: 10px 0 15px
@@ -64,12 +64,16 @@
 					border: none
 
 				.form-inner input[type="submit"]
+					cursor: pointer
 					color: #fff
 					background: #4DC19A
 					padding: 6px 15px
 					font-family: Nunito Sans
 					font-weight: 900
 					font-size: 20px
+					transition: all .3s ease-in-out
+					&:hover
+						background: #24a077
 
 #prefooter
 	.container
@@ -108,8 +112,21 @@ footer
 							font-size: 18px
 							text-decoration: none
 							color: #494949
+							transition: all .2s ease-in-out
+							&:hover
+								color: #4DC19A
 							img
 								display: block
+			.footer__section:last-child
+				width: auto
+				margin: 0 200px 0 0
+				ul
+					li
+						a
+							img
+								transition: all .2s ease-in-out
+								&:hover
+									filter: brightness(0.8)
 
 // FIVE
 

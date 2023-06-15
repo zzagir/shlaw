@@ -37,3 +37,21 @@ body
     max-width: 1366px
     margin: auto
     width: 100%
+
+.animate_one
+    animation: 2s infinite alternate movingAn
+
+.animate_two
+    animation: 2s infinite alternate movingOn
+
+@keyframes movingAn
+    0%
+        transform: translate(0px, 10px)
+    100%
+        transform: translate(10px, 0px)
+
+@keyframes movingOn
+    0%
+        transform: translate(10px, 0px)
+    100%
+        transform: translate(0px, 10px)

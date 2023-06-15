@@ -35,6 +35,9 @@
 					border-radius: 40px
 					box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05)
 					filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+					transition: all .3s ease-in-out
+					&:hover
+						background: #514b9b
 
 			.section__services
 				display: flex
@@ -47,12 +50,15 @@
 					background: #FFFFFF
 					box-shadow: 0px 4px 120px rgba(89, 113, 105, 0.1)
 					border-radius: 30px
+					display: flex
+					flex-direction: column
+					justify-content: space-between
 					.service__info
 						font-weight: 400
 						font-size: 20px
 						line-height: 180%
 						color: #585C65
-						margin: 0 0 30px 0
+						margin: 0 0 50px 0
 					.service__title
 						font-weight: 700
 						font-size: 15px
