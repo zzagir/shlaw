@@ -996,18 +996,4 @@ footer .container .footer-main .footer__section:last-child ul li a img:hover {
   footer .container .footer-main .footer__section ul li a {
     font-size: 22px !important;
   }
-}
-@media (max-width: 420px) {
-  footer .container .footer-main {
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-  }
-  footer .container .footer-main .footer__section {
-    width: 100% !important;
-  }
 }/*# sourceMappingURL=style.css.map */
