@@ -100,7 +100,7 @@ footer
 			.footer__section
 				width: 250px
 				margin: 0 0 50px 0
-				h3
+				h2
 					font-weight: 700
 					font-size: 20px
 					color: #494949
@@ -176,20 +176,50 @@ footer
 				align-items: center !important
 				flex-direction: column !important
 				.footer__section
-					h3
-						font-size: 26px
+					h2
+						font-size: 22px !important
 					ul
 						li
 							a
-								font-size: 22px !important
-
-// @media (max-width: 420px)
-// 	footer
-// 		.container
-// 			.footer-main
-// 				align-items: center !important
-// 				flex-direction: column !important
-// 				.footer__section
-// 					width: 100% !important
+								font-size: 20px !important
 
 // FOOTER
+
+// SCROLL
+
+#yakor
+	display: inline-block
+	background-color: #1F1F2B
+	width: 50px
+	height: 54px
+	text-align: center
+	border-radius: 50px
+	position: fixed
+	bottom: 30px
+	right: 30px
+	transition: background-color .3s, opacity .5s, visibility .5s
+	opacity: 0
+	visibility: hidden
+	z-index: 1000
+
+#yakor::after
+	content: "\f077"
+	font-family: FontAwesome
+	font-weight: normal
+	font-style: normal
+	font-size: 2em
+	line-height: 50px
+	color: #fff
+
+#yakor:hover
+	cursor: pointer
+	background-color: #818181
+
+#yakor:active
+	background-color: #555
+
+#yakor.show_yakor
+	opacity: 1
+	visibility: visible
+
+// SCROLL

@@ -1,0 +1,80 @@
+body {
+  background-color: #888 !important;
+  color: #fff;
+}
+
+header {
+  background-color: #888 !important;
+}
+header .container .header-main .header__nav ul li a {
+  color: white;
+}
+header .container .header-main .header__nav ul li:last-child ul {
+  background: #bbb;
+}
+header .container .header-main .header__nav ul li:last-child ul li a {
+  color: white;
+}
+
+#one {
+  background-color: #666 !important;
+}
+#one .container .section-main .section__text h2 {
+  color: #fff !important;
+}
+#one .container .section-main .section__text p {
+  color: #d9d9d9 !important;
+}
+
+#two .container .section-main .section__text h2 {
+  color: #fff !important;
+}
+#two .container .section-main .section__text p {
+  color: #d9d9d9 !important;
+}
+
+#three .container .section-main .section__text h2 {
+  color: #fff !important;
+}
+#three .container .section-main .section__text p {
+  color: #d9d9d9 !important;
+}
+
+#four .container .section-main .section__text h2 {
+  color: #fff !important;
+}
+#four .container .section-main .section__text p {
+  color: #d9d9d9 !important;
+}
+#four .container .section-main .section__services .service {
+  background: #959595;
+}
+#four .container .section-main .section__services .service .service__info {
+  color: #ffffff;
+}
+#four .container .section-main .section__services .service .service__title {
+  color: #4638db;
+}
+
+#prefooter .container .prefooter-main .prefooter__info {
+  color: #fff;
+}
+
+footer .container .footer-main .footer__section h2 {
+  color: #fff;
+}
+footer .container .footer-main .footer__section ul li a {
+  color: #d9d9d9;
+}
+
+#yakor {
+  background: #fff;
+}
+
+#yakor::after {
+  color: #6b6b6b;
+}
+
+#yakor:hover {
+	background-color: #c4c4c4;
+}

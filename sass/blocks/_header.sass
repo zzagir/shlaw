@@ -25,6 +25,24 @@ header
                     top: 44px
                     right: 0
                     box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+                    button
+                        cursor: pointer
+                        height: 50px
+                        width: 152px
+                        font-family: Nunito Sans
+                        font-size: 18px
+                        font-weight: 800
+                        color: #fff
+                        background: #4DC19A
+                        border: none
+                        border-radius: 40px
+                        box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05)
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+                        transition: all .3s ease-in-out
+                        &:hover
+                            background: #24a077
+                        .svg-icon
+                            height: 25px
                     li
                         display: block
                         margin: 0 0 22px 0
@@ -33,20 +51,21 @@ header
                             text-decoration: none
                             color: black
                             font-size: 19px
-                            padding: 0 10px
+                            padding: 0 5px
+                            transition: all .2s ease-in-out
+                            &:hover
+                                transform: none
+                                color: #4DC19A
                         &:last-child
                             margin: 0
                             a
                                 display: block
-                                transition: all .3s ease-in-out
-                                &:hover
-                                    transform: none
-                                    color: #4DC19A
 
             .header__nav
                 display: flex
                 align-items: center
                 ul
+                    align-items: center
                     display: flex
                     li
                         list-style-type: none
@@ -54,6 +73,7 @@ header
                         display: flex
                         align-items: center
                         a
+                            cursor: pointer
                             display: block
                             text-decoration: none
                             font-size: 20px
@@ -69,6 +89,7 @@ header
                             position: relative
                             ul
                                 flex-direction: column
+                                align-items: flex-start
                                 position: absolute
                                 background-color: #fff
                                 padding: 20px 30px
@@ -115,15 +136,21 @@ header
     transition: all .15s linear
     visibility: hidden
     opacity: 0
-.hdrmenu
-    transition: all .15s linear
-    visibility: hidden
-    opacity: 0
-    li
-        a
-            &:hover
-                color: #4DC19A
-                transform: scale(1.1)
+
+.header__menu
+    .hdr-btn
+        display: block
+    .hdr-cls
+        display: none
+    .hdrmenu
+        transition: all .15s linear
+        visibility: hidden
+        opacity: 0
+        li
+            a
+                &:hover
+                    color: #4DC19A
+                    transform: scale(1.1)
 .show
     display: block !important
     visibility: visible !important
@@ -132,16 +159,61 @@ header
 
 //  SUBMENU
 
-@media (max-width: 950px)
+// SVG
+
+.hdr-cls
+    height: 35px
+    width: 35px
+
+#soon2,
+#moon2
+    width: 100%
+
+#moon1,
+#moon2
+    display: block
+
+.header__nav_night
+    width: auto !important
+    padding: 10px 20px !important
+
+.svg-icon
+    width: 35px
+    height: 35px
+    &.soon
+        display: none
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect
+    fill: #4f4f4f
+
+.svg-icon circle
+    stroke: #4f4f4f
+    stroke-width: 1
+
+// SVG
+@media (max-width: 1128px)
     .header__nav
         button
-            display: none
+            display: none !important
+        li
+            button
+                display: block !important
+                margin: auto !important
+
     .submenu
         left: -155px !important
 
-@media (max-width: 650px)
+    .header__nav_night
+        display: block !important
+
+@media (max-width: 716px)
     .header__nav
         display: none !important
 
     .header__menu
         display: block !important
+        ul
+            button
+                width: 100% !important
