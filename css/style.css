@@ -300,6 +300,16 @@ header .container .header-main .header__nav button:hover {
   background: #24a077;
 }
 
+.menu-menu {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.submenu-btn:hover .menu-menu {
+  stroke: #4DC19A;
+}
+
 .submenu {
   -webkit-transition: all 0.15s linear;
   -o-transition: all 0.15s linear;
